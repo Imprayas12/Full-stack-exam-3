@@ -22,6 +22,7 @@ textArea.onkeyup = function(e) {
         console.log(currentTicket);
         ticketList.push(currentTicket);
         localStorage.setItem('ticketList',JSON.stringify(ticketList));
+        textArea.value = "";
         document.getElementById('new-ticket-section').style.display = "none";
     loadTickets();
     }
