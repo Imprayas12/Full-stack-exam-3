@@ -60,3 +60,4 @@ function loadTickets() {
         tickets.appendChild(newTicket);
     }
 }
+loadTickets();
