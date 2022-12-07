@@ -28,6 +28,7 @@ textArea.onkeyup = function(e) {
     }
 }
 
+
 function makeid(length) {
     var result           = '';
     var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -62,3 +63,8 @@ function loadTickets() {
     }
 }
 loadTickets();
+
+function del(){
+    localStorage.setItem('ticketList',JSON.stringify([]));
+    loadTickets();
+}
