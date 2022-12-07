@@ -92,6 +92,33 @@
 
 .tickets {
     display : flex;
-    justify-content: space-evenly;
+    margin-left:auto;
+    margin-right: auto;
+    justify-content: space-between;
     flex-wrap: wrap;
+    padding: 5%;
+    max-width: 70%;
+    padding: 10%;
+}
+
+.ticket-area {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 3%;
+}
+
+.ticket-area > .top-color {
+    background-color: green;
+    height: 10%;
+}
+.ticket-area > .random-text {
+    font-size: small;
+    border: 1px solid black;
+}
+
+.ticket-area > .rest-area {
+    align-items: center;
+    text-align: center;
+    padding-top: 30%;
 }
